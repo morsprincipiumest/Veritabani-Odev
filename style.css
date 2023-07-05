@@ -1,0 +1,165 @@
+/* Global Stiller */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Yatay hizalama */
+  align-items: flex-start; /* Dikey hizalama */
+}
+
+#container-add-product {
+  display: flex;
+  justify-content: center; /* Yatay hizalama */
+  align-items: flex-start;
+  padding-top: 150px; /* Dikey hizalama */
+}
+
+.sidebar {
+  margin: 50px 70px 0px 150px;
+  background-color: rgb(230, 230, 230);
+  padding: 30px; /* İstenilen boşluk miktarı */
+  border-radius: 10px;
+}
+
+.product-grid {
+  flex-grow: 1; /* Yatay genişlemeyi sağlar */
+}
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Ürün Grid Konteyner */
+#product-container {
+  display: grid;
+  max-width: 1200px;
+  align-content: end;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-top: 70px;
+}
+
+/* Ürün Kartı */
+.product-card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.product-card p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.product-card .price {
+  font-weight: bold;
+}
+
+.product-card .category {
+  font-style: italic;
+}
+
+.product-card .features {
+  color: #888;
+}
+
+/* Sol Kenar Çubuğu */
+
+
+.sidebar .menu-item {
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Kategori listesi */
+#category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#category-list li {
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+#category-list li:hover {
+  background-color: #eeb171;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+#category-list li.active {
+  background-color: #aaec94;
+}
+
+h1 {
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  vertical-align: top;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 300px;
+  padding: 5px;
+}
+
+button[type="submit"] {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.alert {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.container2 {
+  padding-top: 150px;
+}
